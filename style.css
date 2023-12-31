@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif
+}
+.container{
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    color:white; 
+    background-color:darkorange;
+    border-bottom: 2px solid darkorange;
+}
+h1{
+ word-spacing: 5px;   
+}
+.searchbar{
+    width: 400px;
+    display: flex;
+    margin-right: 40px;
+    border: 2px solid rgb(224, 220, 220);
+    border-radius: 7px;
+}
+header .searchbar input{
+    width: 93%;
+    border:none;
+    outline: none;
+    font-size: 25px;
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+}
+.searchbar button{
+    font-size: 20px;
+    border: none;
+    width:20%;
+    border-radius: 0 5px 5px 0;
+    color: darkorange;
+}
+.todoapp{
+    width: 700px;
+    margin: 40px auto 0;
+   
+    padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 5px 2px #fdfbfb;
+   position: relative;
+   
+}
+.todoinput{
+    text-align: center;
+}
+.todoinput input{
+    width: 400px;
+    font-size: 20px;
+    padding :   10px;
+    border: none;
+    outline: none;
+    border:3px solid darkorange;
+    border-radius: 8px;
+}
+ .todoapp .todoinput button{
+background-color: darkorange;
+color:#fff;
+border: none;
+width: 90px;
+height:42px;
+margin-left: 19px;
+border-radius: 7px;
+transform: translateY(-3px);
+}
+.yourtask{
+    margin-top: 20px;
+   position: relative;
+   padding: 15px;
+}
+.yourtask li{
+    list-style-type:none;
+    font-size:x-large;
+    margin: 20px auto 0;
+    border-bottom: 1px solid darkorange;
+    background: darkorange;
+    color: #fff;
+    width:78%;
+    padding: 8px 8px 8px 3px;
+    border-radius: 8px;
+    position: relative;
+    text-indent: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+   
+}
+.todoapp > button{
+    position: absolute;
+    top: 10px;;
+    right:20px;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    border: none;
+    background-color: darkorange;
+    display: none;
+    
+}
+@media screen and (max-width:710px) {
+    .todoapp{
+        width: 100%;
+    }.todoapp .todoinput input{
+        width: 70%;
+    }
+    .todoapp .todoinput button{
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 0;
+
+    }
+      header .searchbar {
+       
+        width: 40%;
+    }
+    
+    
+}
+       
+        
+
+    
